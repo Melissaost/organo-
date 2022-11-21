@@ -5,7 +5,12 @@ import ListaSuspensa from "../ListaSuspensa";
 import "./Formulario.css";
 
 const Formulario = (props) => {
-    
+
+    const [nome, setNome] = useState('');
+    const [cargo, setCargo] = useState('');
+    const [imagem, setImagem] = useState('');
+    const [time, setTime] = useState('');
+
     const times = [
         'Programação',
         'Front-End',
@@ -15,11 +20,6 @@ const Formulario = (props) => {
         'Mobile',
         'Inovação e Gestão'
     ]
-
-    const [nome, setNome] = useState('');
-    const [cargo, setCargo] = useState('');
-    const [imagem, setImagem] = useState('');
-    const [time, setTime] = useState('');
 
 
     const aoSalvar = (evento) => {
